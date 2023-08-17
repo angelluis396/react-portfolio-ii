@@ -117,7 +117,6 @@
     }
   
     .logo-container svg {
-      position: absolute;
       top: auto;
       right: auto;
       bottom: auto;
@@ -125,3 +124,20 @@
       margin: auto;
     }
   }
+  @media (min-width:1100px) and (min-height:900px) {
+    h1 {
+      font-size: 73px !important;
+      line-height: 67px !important
+    }
+    .home-page h2 {
+      font-size: 14px !important
+    }
+    .bg {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2)
+    }
+    .home-page h1 img {
+      width: 38px;
+    }
+    }
