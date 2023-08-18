@@ -41,3 +41,14 @@ textarea {
   animation-fill-mode: forwards;
 }
 
+@media (max-width: 960px) {
+  body {
+    overflow: auto;
+  }
+}
+
+@media (max-width:530px) {
+  body {
+    overflow-x: hidden
+  }
+}

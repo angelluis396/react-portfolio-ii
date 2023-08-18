@@ -12,7 +12,7 @@
       color: #fff;
       font-size: 56px;
       line-height: 53px;
-      margin: 0;
+      //margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
   
@@ -84,9 +84,8 @@
   }
   
   @media screen and (max-width: 1200px) {
-    .tags,
     .home-page h1:before,
-    .home-page h1:after {
+    .home-page h1::after {
       display: none;
     }
   
@@ -96,6 +95,7 @@
       transform: none;
       padding: 10px;
       box-sizing: border-box;
+      margin-top: 10%;
     }
   
     .home-page .flat-button {
@@ -124,6 +124,28 @@
       margin: auto;
     }
   }
+
+  @media (max-width:1024px) {
+    h1 {
+      font-size: 54px !important;
+      line-height: 45px
+    }
+
+    .home-page .text-zone{
+	    width: 80%;
+	    min-height: 0
+	  }
+  }
+
+  @media (max-width: 960px) {
+    .home-page h1:before {
+      left: 13px;
+    }
+    .home-page .flat-button {
+      display: none;
+    }
+  }
+
   @media (min-width:1100px) and (min-height:900px) {
     h1 {
       font-size: 73px !important;
@@ -140,4 +162,27 @@
     .home-page h1 img {
       width: 38px;
     }
+    .text-zone p {
+      font-size: 16px !important;
+      line-height: 23px !important
     }
+    .bg {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2)
+    }
+    .home-page h1 img {
+      width: 38px;
+    }
+}
+@media (max-width:530px) {
+  .home-page .text-zone {
+	  width: 85%;
+	  left: 5%
+	}
+  .home-page h1::after {
+	  display: none
+	}
+
+
+}

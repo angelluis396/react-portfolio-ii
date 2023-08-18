@@ -64,7 +64,7 @@
           line-height: 18px;
         }
   
-        &:after {
+        &::after {
           content: '<h1/>';
           font-family: 'La Belle Aurore', cursive;
           color: #CCF381;
@@ -113,10 +113,14 @@
       }
     }
   }
-  
+
   @media screen and (max-width: 1200px) {
     .page {
       position: initial;
+    }
+    
+    .tags {
+      display: none;
     }
   
     .container {
@@ -178,5 +182,25 @@
 	  }
     .home-page h1:before {
       left: 13px;
+    }
+    .tags {
+      margin-left: 10px;
+      left: 0
+    }
+    .top-tags {
+      bottom: auto;
+      top: 76px
+    }
+    .bottom-tags {
+      position: absolute;
+      clear: both;
+      float: left;
+      margin-top: 22px;
+      bottom: 0
+    }
+  }
+  @media (max-width:530px) {
+    body {
+      overflow-x: hidden
     }
   }

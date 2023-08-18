@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react'
-import {
-  faJava,
-  faCss3Alt,
-  faGithub,
-  faHtml5,
-  faJsSquare,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons'
+import { Canvas } from '@react-three/fiber'
+import { useGLTF, Stage, PresentationControls} from '@react-three/drei'
+
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+
+function Model(props){
+  const { scene } = useGLTF("/amp.glb")
+  return <primitive object={scene} {...props} />
+}
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -44,31 +43,20 @@ const About = () => {
           <p>
             If I had to define myself in one sentence it would be hard working 
             family man with an electric guitar and Heavy Metal obsession,
-            that loves hiking and lifting, and is passionate about how technology improves our lives!!
+            that loves hiking and lifting, and is passionate about how technology can improve our lives!!
           </p>
         </div>
 
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faJava} color="#DD0031" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faCss3Alt} color="#28A4D9" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGithub} color="#EC4D28" />
-            </div>
-          </div>
+        <div className="amp-3d">
+          <Canvas dpr={[1,2]} shadows camera={{ fov: 45 }} style={{position:"absolute", width:"500px", height:"800px"}}>
+            <color attach="background" args={["#022c43"]} />
+            <PresentationControls speed={1.5} global zoom={.5} polar={[-0.1, Math.PI / 4]}>
+              <Stage environment={"sunset"}>
+                 <Model scale={0.01} />
+              </Stage>
+            </PresentationControls>
+          </Canvas>
+
         </div>
       </div>
       <Loader type="pacman" />
