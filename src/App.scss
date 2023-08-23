@@ -6,16 +6,22 @@ $primary-color: #CCF381;
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'La Belle Aurore';
   src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 input, 
@@ -41,14 +47,14 @@ textarea {
   animation-fill-mode: forwards;
 }
 
-@media (max-width: 960px) {
-  body {
-    overflow: auto;
-  }
-}
+// @media (max-width: 960px) {
+//   body {
+//     overflow: auto;
+//   }
+// }
 
-@media (max-width:530px) {
-  body {
-    overflow-x: hidden
-  }
-}
+// @media (max-width:530px) {
+//   body {
+//     overflow-x: hidden
+//   }
+// }

@@ -11,11 +11,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #022c43;
   /* This is left causes scrolling issues on small screens */
-  /* overflow: hidden; */
+  overflow: hidden;
   display: block;
 }
 
 .dashboard {
   margin-top: 200px;
   margin-left: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
 }

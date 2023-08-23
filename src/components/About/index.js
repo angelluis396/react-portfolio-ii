@@ -7,7 +7,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 function Model(props){
-  const { scene } = useGLTF("/amp.glb")
+  const { scene } = useGLTF("/guitar.glb")
   return <primitive object={scene} {...props} />
 }
 
@@ -47,8 +47,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="amp-3d">
-          <Canvas dpr={[1,2]} shadows camera={{ fov: 45 }} style={{position:"absolute", width:"500px", height:"800px"}}>
+        <div className="guitar-3d">
+          <Canvas dpr={[1,2]} shadows camera={{ fov: 45 }} style={{position:"absolute", width:"500px", height:"900px"}}>
             <color attach="background" args={["#022c43"]} />
             <PresentationControls speed={1.5} global zoom={.5} polar={[-0.1, Math.PI / 4]}>
               <Stage environment={"sunset"}>

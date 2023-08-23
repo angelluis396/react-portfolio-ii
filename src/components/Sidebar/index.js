@@ -1,3 +1,4 @@
+// import './index.scss'
 import './index.css';
 import { useState } from 'react'
 import LogoS from '../../assets/images/logo-a-full-height-full-width.png'
@@ -18,8 +19,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
-const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false);
+const Sidebar = (initialState) => {
+  const [showNav, setShowNav] = useState(!initialState);
+
+  const handleClick = () => {
+    setShowNav(!showNav)
+  }
 
   return (
     <div className="nav-bar">
@@ -75,12 +80,13 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
 
-        <FontAwesomeIcon 
+
+        {/* <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
           color="#CCF381"
           size="3x"
-          className='close-icon' />
+          className='close-icon' /> */}
       </nav>
       <ul>
         <li>
@@ -111,11 +117,12 @@ const Sidebar = () => {
         </li>
       </ul>
       <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
+          onClick={handleClick}
+          
           icon={faBars}
-          color="#ffd700"
           size="3x"
           className='hamburger-icon' />
+     
     </div>
   )
 }

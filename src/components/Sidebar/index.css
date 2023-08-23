@@ -7,7 +7,6 @@ nav {
   margin-top: -120px;
   width: 100%;
 }
-
 nav a {
   font-size: 22px;
   color: #4d4d4e;
@@ -17,7 +16,6 @@ nav a {
   position: relative;
   text-decoration: none;
 }
-
 .nav-bar {
   background: #181818;
   width: 60px;
@@ -27,7 +25,6 @@ nav a {
   z-index: 3;
   min-height: 500px;
 }
-
 .nav-bar nav a {
   font-size: 22px;
   color: #4d4d4e;
@@ -37,7 +34,6 @@ nav a {
   position: relative;
   text-decoration: none;
 }
-
 .nav-bar nav {
   display: block;
   text-align: center;
@@ -47,11 +43,9 @@ nav a {
   margin-top: -120px;
   width: 100%;
 }
-
 .nav-bar nav a.active {
   color: #CCF381;
 }
-
 .nav-bar nav a:after {
   content: '';
   font-size: 9px;
@@ -65,27 +59,21 @@ nav a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
 .nav-bar nav a i {
   transition: all 0.3s ease-out;
-  
 }
-
 .nav-bar nav a:hover {
   color: #CCF381;
 }
-
 .nav-bar nav a:hover svg {
   opacity: 0;
 }
 .nav-bar nav a:hover:after {
   opacity: 1;
 }
-
 .nav-bar ul li:hover .anchor-icon {
   color: #CCF381;
 }
-
 .nav-bar ul li a {
   padding: 7px 0;
   display: block;
@@ -93,11 +81,9 @@ nav a {
   line-height: 16px;
   color: #4d4d4e;
 }
-
 .nav-bar nav a.active svg {
   color: #CCF381;
 }
-
 .nav-bar nav a:first-child:after {
   content: 'HOME';
 }
@@ -113,20 +99,15 @@ nav a {
 .nav-bar nav a.contact-link:after {
   content: 'CONTACT';
 }
-
-
 .nav-bar .logo {
   display: block;
-  padding: 8px 0;
 }
-
 .logo img {
   display: block;
   margin: 8px auto;
-  width: 24px;
+  width: 35px;
   height: auto;
 }
-
 .hamburger-icon, .close-icon {
   display: none;
 }
@@ -142,49 +123,10 @@ nav a {
   margin: 0;
 }
 
-@media screen and (max-width: 1200px) {
-  .nav-bar {
-    background: #181818;
-    position: initial;
-    height: auto;
-    min-height: auto;
- }
-  .nav-bar ul, .nav-bar nav {
-    display: none;
- }
-  .nav-bar nav {
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: #181818;
-    height: auto;
-    margin: 0;
-    z-index: 2;
-    position: fixed;
- }
-  .nav-bar nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-  .nav-bar nav a::after {
+@media (max-width: 960px) {
+  .nav-bar nav.show {
     opacity: 1;
-    position: initial;
-    width: auto;
-    margin-left: 10PX;
  }
-  .nav-bar nav a svg {
-    opacity: 1 !important;
- }
-  .nav-bar .hamburger-icon, .nav-bar .close-icon {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    display: block;
-    color: #ccf381;
- }
-}
-@media screen and (max-width: 960px) {
   .nav-bar {
     width: 100%;
     height: 60px;
@@ -201,7 +143,7 @@ nav a {
  }
   .logo img {
     display: block;
-    margin: 5px 15px 5px 19px;
+    /* margin: 5px 15px 5px 19px; */
     height: auto;
  }
   .logo img.sub-logo {
@@ -212,22 +154,25 @@ nav a {
     height: auto;
  }
   .nav-bar nav {
-    width: 42%;
+    width: 50%;
     position: absolute;
-    left: 50%;
-    margin-left: -19%;
     float: left;
     overflow: hidden;
     text-align: center;
     height: 60px;
-    top: 0;
-    display: block;
     margin-top: 0;
+    background: #181818;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    left: 50%;
+    margin-left: -19%;
+    top: 0;
  }
   .nav-bar nav a {
     float: left;
     margin-left: 14%;
     line-height: 7px;
+    line-height: 60px;
     height: 60px;
  }
   .nav-bar nav a:first-child {
@@ -257,36 +202,107 @@ nav a {
     padding: 0;
  }
 }
-@media (max-width: 530px) {
+
+/* @media screen and (max-width: 960px) {
   .nav-bar nav.show {
-    left: 0;
+    left: 50%;
     opacity: 1;
  }
-  .nav-bar {
-    position: fixed;
+  .logo {
+    float: left;
+    padding: 2px 0;
+    margin-right: 20px;
+ }
+  .logo img {
+    display: block;
+    margin: 5px 15px 5px 19px;
+    height: auto;
+ }
+  .logo img.sub-logo {
+    width: 50px;
+    margin-left: 5px;
+ }
+  .logo > img:first-child {
+    height: auto;
  }
   .nav-bar nav {
-    width: 100%;
-    position: fixed;
-    left: 100%;
-    opacity: 0;
-    margin-left: 0;
+    width: 42%;
+    position: absolute;
+    left: 50%;
+    margin-left: -19%;
     float: left;
     overflow: hidden;
     text-align: center;
     height: 60px;
-    top: 60px;
-    margin-top: 0;
-    background: #181818;
+    top: 0;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
  }
   .nav-bar nav a {
     float: left;
-    margin-left: 0 !important;
-    line-height: 60px;
+    margin-left: 14%;
     height: 60px;
+ }
+  .nav-bar nav a:first-child {
+    margin-left: 0;
+ }
+ .nav-bar ul {
+  display: none;
+  }
+} */
+
+@media (max-width: 655px) {
+  .nav-bar {
+    position: fixed;
+ }
+  .nav-bar nav {
+    opacity: 0;
+    /* margin-left: 50%; */
+ }
+  .nav-bar nav a {
+    margin-left: 0 !important;
     width: 16.5%;
+ }
+ .nav-bar ul {
+  display: none;
+  }
+ .nav-bar .hamburger-icon, .nav-bar .close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  color: #ccf381;
+  }
+}
+
+@media (max-width: 530px) {
+  .nav-bar {
+    position: fixed;
+ }
+  .nav-bar nav {
+    opacity: 0;
+    margin-left: auto;
+ }
+  .nav-bar nav a {
+    margin-left: 0 !important;
+    width: 16.5%;
+ }
+  .nav-bar ul {
+    display: none;
+ }
+}
+
+@media (max-width: 430px) {
+  .nav-bar {
+    position: fixed;
+ }
+  .nav-bar nav {
+    opacity: 0;
+    width: 50%;
+    margin-left: -25%;
+ }
+  .nav-bar nav a {
+    margin-left: 0;
  }
   .nav-bar ul {
     display: none;
