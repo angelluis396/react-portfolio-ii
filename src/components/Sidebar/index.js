@@ -1,4 +1,5 @@
-import './index.scss'
+// import './index.scss'
+import './index.css';
 import { useState } from 'react'
 import LogoS from '../../assets/images/logo-a-full-height-full-width.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
@@ -18,8 +19,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
-const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false);
+const Sidebar = (initialState) => {
+  const [showNav, setShowNav] = useState(!initialState);
+
+  const handleClick = () => {
+    setShowNav(!showNav)
+  }
 
   return (
     <div className="nav-bar">
@@ -31,7 +36,8 @@ const Sidebar = () => {
         <img src={LogoS} alt="Logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="angel" />
       </Link>
-      <nav className={showNav ? 'mobile-show' : ''}>
+      <nav className={showNav ? 'en show' : ''}>
+
         <NavLink 
           exact="true"
           activeclassname="active"
@@ -47,7 +53,7 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-{/* new */}
+
         <NavLink 
           activeclassname="active"
           className="skills-link"
@@ -74,17 +80,18 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
 
-        <FontAwesomeIcon 
+
+        {/* <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
-          color="#ffd700"
+          color="#CCF381"
           size="3x"
-          className='close-icon' />
+          className='close-icon' /> */}
       </nav>
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/angel-alicea-iii/"
             target="_blank"
             rel="noreferrer"
           >
@@ -97,7 +104,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/angelluis396"
             target="_blank"
             rel="noreferrer"
           >
@@ -110,11 +117,12 @@ const Sidebar = () => {
         </li>
       </ul>
       <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
+          onClick={handleClick}
+          
           icon={faBars}
-          color="#ffd700"
           size="3x"
           className='hamburger-icon' />
+     
     </div>
   )
 }

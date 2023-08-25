@@ -11,6 +11,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import './stars.scss'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -23,7 +24,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="container about-page">
+      <div className="container skills">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -47,6 +48,9 @@ const Skills = () => {
         </div>
 
         <div className="stage-cube-cont">
+          <div id='stars'></div>
+          <div id='stars2'></div>
+          <div id='stars3'></div>
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faJava} color="#DD0031" />

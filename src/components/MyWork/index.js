@@ -148,8 +148,8 @@ const MyWork = () => {
                 </TrackVisibility>
               </Col>
           </Container>
-          <Loader type="pacman" />
-          </div>  
+          </div>
+          <Loader type="pacman" />  
         </>
       )
       

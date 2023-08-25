@@ -1,3 +1,68 @@
+.container.skills .text-zone {
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 30%;
+	vertical-align: middle;
+	display: table-cell;
+	max-height: 90%;
+	z-index: 3;
+  }
+  
+  .container.skills .text-zone h1 {
+	font-size: 53px;
+	font-family: 'Coolvetica';
+	color: #CCF381;
+	font-weight: 400;
+	line-height: 50px;
+	margin-top: 0;
+	margin-bottom: 40px;
+	position: relative;
+	display: block
+  }
+  
+  .container.skills h1 .blast {
+	will-change: transform;
+	opacity: 0;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out
+  }
+  
+  .container.skills .text-zone h1:before {
+	content: '<h1>';
+	font-family: 'La Belle Aurore', cursive;
+	color: #CCF381;
+	font-size: 18px;
+	position: absolute;
+	margin-top: -35px;
+	opacity: 0.6;
+	left: -10px
+  }
+  
+  .container.skills .text-zone h1:after {
+	content: '<h1/>';
+	font-family: 'La Belle Aurore', cursive;
+	color: #CCF381;
+	font-size: 18px;
+	position: absolute;
+	left: -35px;
+	bottom: -40px;
+	opacity: 0.6;
+	margin-left: 20px
+  }
+  
+  .container.skills .text-zone p {
+	font-size: 13px;
+	line-height: 18px;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300
+  }
+
+
 .stage-cube-cont {
     width: 50%;
     height: 100%;
@@ -6,6 +71,7 @@
     margin-left: 0;
     position: absolute;
     right: 0;
+    overflow: hidden;
   }
   
   .cubespinner {
@@ -78,16 +144,30 @@
       transform: rotateX(90deg);
     }
   }
-  @media(max-width: 960px){
-    .stage-cube-cont{
-        position: relative;
-        width: 100%;
-        height: 445px;
-    }
+@media (min-width:1100px) and (min-height:900px) {
+  .container.skills-page .text-zone h1:before {
+	  margin-top: -38px
+	}
+  .container.skills-page .text-zone h1:after {
+	  bottom: -44px
+	}
+}
+@media(max-width: 960px){
+  .stage-cube-cont{
+    position: relative;
+    width: 100%;
+    height: 445px;
   }
-  @media(min-width: 360px){
-    .stage-cube-cont{
-    }
+	.container.skills .text-zone {
+	  width: 80%;
+	  min-height: 0
+	}
+  
+}
+@media(min-width: 360px){
+  .stage-cube-cont{
+
   }
+}
   
   
