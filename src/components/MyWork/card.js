@@ -1,6 +1,10 @@
 import { Col } from "react-bootstrap";
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const Card = ({ title, description, imgUrl }) => {
+
+
+export const Card = ({ title, description, imgUrl, link }) => {
   return (
     
     <Col sm={6} md={4} className="card">
@@ -9,6 +13,22 @@ export const Card = ({ title, description, imgUrl }) => {
         <div className="proj-txt">
           <h4>{title}</h4>
           <span className="description">{description}</span>
+          <br/>
+          <a
+            href={link}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub Demo    
+          </a>
+          <br />
+          <a
+            href="https://github.com/aliceaa396"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Live Demo    
+          </a>
         </div>
       </div>
     </Col>

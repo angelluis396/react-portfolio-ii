@@ -27,31 +27,43 @@ const MyWork = () => {
         title: "PJ 1",
         description: "Design & Development",
         imgUrl: projImg1,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 2",
         description: "Design & Development",
         imgUrl: projImg2,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 3",
         description: "Design & Development",
         imgUrl: projImg2,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 4",
         description: "Design & Development",
         imgUrl: projImg1,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 5",
         description: "Design & Development",
         imgUrl: projImg2,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 6",
         description: "Design & Development",
         imgUrl: projImg2,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       }
     ];
   
@@ -60,27 +72,37 @@ const MyWork = () => {
         title: "PJ 7",
         description: "Design & Development",
         imgUrl: projImg1,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 8",
         description: "Design & Development",
         imgUrl: projImg2,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 9",
         description: "Design & Development",
         imgUrl: projImg2,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       ,
       {
         title: "PJ 10",
         description: "Design & Development",
         imgUrl: projImg1,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       },
       {
         title: "PJ 11",
         description: "Design & Development",
         imgUrl: projImg2,
+        link: "https://github.com/aliceaa396",
+        liveDemoLink: "https://github.com/aliceaa396" 
       }
     ];
 
