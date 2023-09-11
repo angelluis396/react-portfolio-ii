@@ -5,7 +5,7 @@ export const Card = ({ title, description, imgUrl, link, liveDemoLink }) => {
     
     <Col sm={6} md={4} className="card">
       <div className="proj-img">
-        <img src={imgUrl} />
+        <img alt='project-image' src={imgUrl} />
         <div className="proj-txt">
           <h4>{title}</h4>
           <span className="description">{description}</span>
