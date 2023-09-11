@@ -31,10 +31,16 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p align="LEFT">
             I am an ambitious full stack developer fueled by a passion for innovation. I am looking to contribute my 
             expertise to a forward-thinking company that is venturing into the realm of technology. With a strong commitment 
             to excellence, I am eager to collaborate with like-minded professionals to create meaningful and lasting impact.
+          </p>
+          <p>
+            With a track record of designing and implementing efficient backend systems, optimizing database performance, and 
+            ensuring data integrity, I thrive on tackling complex technical challenges. I'm not just a problem-solver, I'm also 
+            a collaborative team player committed to delivering innovative solutions that not only meet user requirements but also 
+            align perfectly with your business objectives.
           </p>
           <p align="LEFT">
             I'm quiet disciplined, instinctively curious, and perpetually refining my

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
-export const Card = ({ title, description, imgUrl, link }) => {
+export const Card = ({ title, description, imgUrl, link, liveDemoLink }) => {
   return (
     
     <Col sm={6} md={4} className="card">
@@ -23,7 +23,7 @@ export const Card = ({ title, description, imgUrl, link }) => {
           </a>
           <br />
           <a
-            href="https://github.com/aliceaa396"
+            href={liveDemoLink}
             rel="noopener noreferrer"
             target="_blank"
           >

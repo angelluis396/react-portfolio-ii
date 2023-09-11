@@ -38,12 +38,14 @@ const Skills = () => {
             Python, SQL, Git, Figma, Atlassian Tools, etc.
           </p>
           <p align="LEFT">
-            lorem
+            As a results-driven Back-End Software Engineer, I bring a wealth of experience to the table, particularly in 
+            backend development over the past two years. My expertise lies in crafting robust, scalable, and high-performance 
+            solutions while leveraging a strong foundation in software engineering principles.
           </p>
           <p>
-            While not a designer by trade I have a good eye for aesthetics and have a experience in creating
-            responsive, mobile-first web designs. My focus lies in code optimization and delivering high quality 
-            user experiences.
+            But my passion doesn't stop there. I thoroughly enjoy the dynamic realm of front-end development as well. My dedication 
+            to delivering exceptional results extends to creating seamless and user-friendly interfaces. My experience in the backend 
+            complements my front-end skills, making me a versatile engineer who can bridge the gap between both worlds.
           </p>
         </div>
 
