@@ -1,8 +1,4 @@
 import { Col } from "react-bootstrap";
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
 
 export const Card = ({ title, description, imgUrl, link, liveDemoLink }) => {
   return (
