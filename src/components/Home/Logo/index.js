@@ -1,10 +1,9 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import LogoA from '../../../assets/images/logo-a-full-height-full-width.png'
 import './index.scss'
 
 const Logo = () => {
   const bgRef = useRef()
-  const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
 
   // useEffect(() => {
