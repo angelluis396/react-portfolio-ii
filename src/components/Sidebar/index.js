@@ -1,4 +1,3 @@
-// import './index.scss'
 import './index.css';
 import { useState } from 'react'
 import LogoS from '../../assets/images/logo-a-full-height-full-width.png'
@@ -13,7 +12,6 @@ import {
   faUser,
   faEnvelope,
   faBars,
-  faClose,
   faGears,
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons'
@@ -79,14 +77,6 @@ const Sidebar = (initialState) => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-
-
-        {/* <FontAwesomeIcon 
-          onClick={() => setShowNav(false)}
-          icon={faClose}
-          color="#CCF381"
-          size="3x"
-          className='close-icon' /> */}
       </nav>
       <ul>
         <li>
