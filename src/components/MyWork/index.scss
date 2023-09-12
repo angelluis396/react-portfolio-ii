@@ -9,6 +9,19 @@
     display: block;
 }
 
+#link {
+    font-size: 15px;
+    padding-bottom:2px ;
+}
+
+#link :hover {
+    font-weight: bold;
+}
+
+#link:visited{
+    color: #CCF381;
+}
+
 .container.projects-page {
   
     h1 {
@@ -80,14 +93,6 @@
   }
 }
 
-#projects-tabs {
-    border: 5px solid lightblue;
-}
-
-.grid-wrapper {
-    // border: 3px dotted darkgreen;
-}
-
 #grid-item {
     display: flex;
     flex-direction: row;
@@ -112,8 +117,8 @@
 
 .proj-img {
     // border: 3px solid black;
-    width: 400px;
-    height: auto;
+    width: auto;
+    height: 90%;
     position: relative;
 	overflow: hidden;
     flex-grow: 1;
@@ -152,12 +157,15 @@
     }
     .description {
         color: #fff;
+        font-size: 15px;
     }
     h4 {
         font-size: 30px;
         font-weight: 700;
         letter-spacing: 0.8px;
         line-height: 1.1em;
+        margin: 0;
+        padding-bottom: 2px;
     }
     .background-image-right {
         top: 20%;
@@ -226,11 +234,11 @@
         margin-top: 0;
     }
     .proj-img {
-        width: 168px;
+        // width: 168px;
         height: 175px;
     }
     .proj-img img{
-        width: 168px;
+        // width: 168px;
         height: 175px;
     }
     .container.projects-page h1:before {
@@ -304,6 +312,13 @@
 @media(max-width: 375px) {
     .container.projects-page h1 {
         margin-top: 100px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    #link {
+        font-size: 12px;
+        margin-bottom: 2px;
     }
 }
 

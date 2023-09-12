@@ -39,7 +39,7 @@ const MyWork = () => {
         description: "A clone of the famous (...or infamous) ChatGPT called AngelGPT!",
         imgUrl: projImg1,
         link: "https://github.com/angelluis396/react-angelgpt",
-        liveDemoLink: "" 
+        liveDemoLink: "https://github.com/angelluis396/react-angelgpt" 
       },
       {
         title: "Spensy Tracker",
@@ -60,7 +60,7 @@ const MyWork = () => {
         description: "This is a Next.js application that utilizes chatGPT to generate quiz questions based on a topic you give it. This application allows you to sign in with gmail and gives you the option to choose between multiple choice questions or open ended questions",
         imgUrl: projImg4,
         link: "https://github.com/angelluis396/quizy-ai",
-        liveDemoLink: "" 
+        liveDemoLink: "https://quizy-ai.vercel.app" 
       }
     ];
   
@@ -71,12 +71,6 @@ const MyWork = () => {
         imgUrl: oldProjImg3,
         link: "https://gist.github.com/angelluis396/8635a80457835309a1827c9fe8e9d46e",
       },
-      // {
-      //   title: "Python Automation",
-      //   description: "Design & Development",
-      //   imgUrl: oldProjImg2,
-      //   link: "https://github.com/angelluis396/pythonAutomation",
-      // },
       {
         title: "Matrix Quiz",
         imgUrl: oldProjImg1,

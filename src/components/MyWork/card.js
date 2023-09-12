@@ -13,6 +13,7 @@ export const Card = ({ title, description, imgUrl, link, liveDemoLink }) => {
           <a
             href={link}
             rel="noopener noreferrer"
+            id="link"
             target="_blank"
           >
             GitHub Demo    
@@ -21,6 +22,7 @@ export const Card = ({ title, description, imgUrl, link, liveDemoLink }) => {
           <a
             href={liveDemoLink}
             rel="noopener noreferrer"
+            id="link"
             target="_blank"
           >
             Live Demo    
