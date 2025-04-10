@@ -124,15 +124,7 @@
       margin-top: 50%;
             
       &::before {
-        content: '';
-        position: absolute;
-        bottom: 64%; 
-        left: 50%;
-        transform: translateX(-50%);
-        width: 35%;
-        height: 3px;
-        background: #CCF381; 
-        border-radius: 2px;
+        display: none;
       }
     }
     .home-page .flat-button {
