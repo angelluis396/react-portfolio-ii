@@ -1,0 +1,114 @@
+.top-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px 15px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.profile-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.profile-name {
+  color: #4d4d4e;
+  font-family: 'Coolvetica', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hamburger {
+  display: none; /* Hidden on desktop */
+  font-size: 24px;
+  color: #4d4d4e;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 1;
+}
+
+.menu-list li {
+  margin-left: 20px;
+}
+
+.menu-list a {
+  color: #4d4d4e;
+  text-decoration: none;
+  font-family: 'Coolvetica', sans-serif;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu-list a:hover {
+  color: #4831d4;
+}
+
+.menu-list li.active a {
+  color: #4831d4;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .top-menu {
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between; /* Ensure profile and hamburger are spaced */
+  }
+
+  .profile-container {
+    margin-left: 10px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .menu-list {
+    display: none; /* Hide by default on mobile */
+    &.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* Below the top menu height */
+      left: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      align-items: center;
+    }
+
+    li {
+      margin: 15px 0; /* Vertical spacing */
+      text-align: center;
+    }
+
+    a {
+      font-size: 20px; /* Slightly larger for mobile readability */
+    }
+  }
+}

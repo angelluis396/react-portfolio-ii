@@ -1,26 +1,16 @@
 .logo-container {
-    position: absolute;
-    z-index: 0;
-    width: 400px;
-    height: 609px;
-    opacity: 0;
-    top: 0;
-    right: 15%;
-    bottom: 0;
-    left: auto;
-    margin: auto;
+  position: relative; /* Changed from absolute */
+  width: 400px;
+  height: 609px;
+  opacity: 1; /* Set to 1 if it should be visible; adjust if animated elsewhere */
+  margin-top: 20px;
 
     .solid-logo {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
+      position: relative;
       width: 100%;
-      opacity: 0;
-      transform: rotateZ(20deg) !important;
-      z-index: 1;
+      opacity: 1; /* Set to 1 if it should be visible */
+      transform: rotateZ(20deg); /* Keep the rotation */
+      z-index: 1
     }
   }
   
@@ -29,75 +19,33 @@
     stroke-width: 10;
   }
 
-  @media screen and (max-width: 1025px) {
-    // .logo-container .solid-logo {
-    //   margin-top: 0;
-    // }
-  }
   @media screen and (max-width: 960px) {
-    .guitar-3d {
-      display: none;
+    .logo-container {
+      position: relative; /* Change to relative for Flexbox */
+      width: 263px;
+      height: 400px;
+      margin-top: 20px; /* Space above logo */
+      right: auto; /* Remove right positioning */
     }
-    .logo-container .solid-logo {
+    .solid-logo {
       width: 80%;
-      margin-top: 10%;
-    }
-    .logo-container {
-      width: 263px;
-      height: 400px;
-      right: 40%;
+      margin: 0 auto; /* Center horizontally */
     }
   }
-
-  @media screen and (max-width: 845px) {
-    .logo-container {
-      right: 0;
-    }
-  }
-
+  
+  /* Remove or adjust subsequent media queries for consistency */
   @media screen and (max-width: 835px) {
-    .logo-container .solid-logo {
-      width: 70%;
-      margin-top: 18%;
-    }
     .logo-container {
       width: 263px;
       height: 400px;
-      right: 30%;
+    }
+    .solid-logo {
+      width: 70%;
     }
   }
-
-  @media screen and (max-width: 690px) {
-    .logo-container {
-      right: 20%;
-    }
-  }
-
-  @media screen and (max-width: 590px) {
-    .logo-container {
-      right: 10%;
-    }
-  }
-
-  @media screen and (max-width: 490px) {
-    .logo-container {
-      right: 1%;
-    }
-  }
-
-  @media screen and (max-width: 415px) {
-    .logo-container .solid-logo {
-      width: 65%;
-      margin-top: 13%;
-    }
-    .logo-container {
-      right: -18%;
-    }
-  }
-
+  
   @media screen and (max-width: 365px) {
     .logo-container .solid-logo {
-      display: none;
+      display: none; /* Keep this if you want it hidden on small screens */
     }
-
   }

@@ -1,0 +1,200 @@
+.container.about-skills-page {
+  padding: 50px;
+  background-color: #F6F4F1;
+  opacity: 1;
+  background-image:  linear-gradient(135deg, #CCF381 25%, transparent 25%), linear-gradient(225deg, #CCF381 25%, transparent 25%), linear-gradient(45deg, #CCF381 25%, transparent 25%), linear-gradient(315deg, #CCF381 25%, #F6F4F1 25%);
+  background-position:  4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+  position: relative;
+  height: auto;
+
+    h1 {
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      color: #4831d4;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 50px;
+      left: -10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px; // Adjust distance from text
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75px; // Short underline length
+        height: 3px; // Thickness
+        background: #4d4d4e; // Matches your 
+        border-radius: 2px; // Slight rounding
+      }
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+
+    .intro-blurb {
+      font-size: 2rem;
+      color: black;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .get-to-know-me,
+    .skills {
+      flex: 1;
+    }
+
+    
+    .get-to-know-me {
+      h2 {
+        font-family: 'Coolvetica';
+        font-size: 2.8rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 2rem;
+        line-height: 1.6;
+        color: black;
+      }
+
+      button {
+        font-family: "Coolvetica", sans-serif;
+        margin-top: 15px;
+        padding: 15px 30px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background: #4831d4;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 13px;
+
+        &:hover {
+          color: #CCF381;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+    
+    .skills {
+      h2 {
+        font-family: 'Coolvetica';
+        font-size: 2.8rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .stage-cube-cont {
+        width: 100%;
+        height: 500px;
+        perspective: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cubespinner {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          animation-duration: 12s;
+          transform-style: preserve-3d;
+          transform-origin: 100px 100px 0;
+          animation-name: spincube;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+
+          div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 20px 0px #4831d4;;
+          }
+
+          .face1 {
+            transform: translateZ(100px);
+            color: #dd0031;
+          }
+          .face2 {
+            transform: rotateY(90deg) translateZ(100px);
+            color: #f06529;
+          }
+          .face3 {
+            transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+            color: #28a4d9;
+          }
+          .face4 {
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+            color: #5ed4f4;
+          }
+          .face5 {
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+            color: #efd81d;
+          }
+          .face6 {
+            transform: rotateX(-90deg) translateZ(100px);
+            color: #ec4d28;
+          }
+        }
+      }
+    }
+  }
+  @keyframes spincube {
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    33% {
+      transform: rotateY(-90deg) rotateX(90deg);
+    }
+    50% {
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      transform: rotateX(90deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+
+    .content {
+      flex-direction: column;
+      gap: 40px;
+
+      .get-to-know-me,
+      .skills {
+        width: 100%;
+      }
+    }
+  }
+}

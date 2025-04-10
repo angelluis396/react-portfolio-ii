@@ -1,110 +1,76 @@
-import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
+import { useEffect, useState } from 'react';
+// import Loader from 'react-loaders';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import AnimatedLetters from '../AnimatedLetters';
+import './index.scss';
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
+  const [letterClass, setLetterClass] = useState('text-animate');
+  const form = useRef();
 
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+      setLetterClass('text-animate-hover');
+    }, 3000);
+  }, []);
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm('service_q72ip6g', 'template_p1im51h', form.current, '9K4J4SkwqNkvtkCua')
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          alert('Message successfully sent!');
+          window.location.reload(false);
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert('Failed to send the message, please try again');
         }
-      )
-  }
+      );
+  };
 
   return (
     <>
       <div className="container contact-page">
-        <div className="text-zone">
+        <div className="contact-wrapper">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', ' ', 'M', 'e']}
+              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
               idx={15}
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I’m interested in freelance opportunities—especially ambitious or large projects. Feel free to reach out with any requests or questions!
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
-                <li className="half">
+                <li>
                   <input placeholder="Name" type="text" name="from_name" required />
                 </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="user_email"
-                    required
-                  />
+                <li>
+                  <input placeholder="Email" type="email" name="user_email" required />
                 </li>
                 <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
+                  <input placeholder="Subject" type="text" name="subject" required />
                 </li>
                 <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
+                  <textarea placeholder="Message . . ." name="message" required></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input type="submit" className="flat-button" value="SEND MESSAGE" />
                 </li>
               </ul>
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Angel L. Alicea III,
-          <br />
-          New York City,
-          <br />
-          New York <br />
-          <br />
-          <span>ala31996@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[40.71427, -74.00597]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[40.71427, -74.00597]}>
-              <Popup>Angel lives here, stop by for some coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div>
       </div>
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

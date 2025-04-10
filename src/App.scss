@@ -1,4 +1,29 @@
-$primary-color: #CCF381;
+html {
+  scroll-behavior: smooth;
+}
+section {
+  position: relative; 
+  width: 100%;
+  display: block;  
+  box-sizing: border-box;
+  height: auto;
+}
+
+.home, .contact{
+  min-height: 100vh;
+  background-color: #ffffff;
+  opacity: 1;
+  background: linear-gradient(135deg, #f3f3f355 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #f3f3f3 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #f3f3f355 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #f3f3f3 25%, #ffffff 25%) 0px 0/ 80px 80px;
+}
+.about {
+  background-color: #4831d4;
+}
+
+.projects {
+  min-height: 100vh;
+  background-color: #F6F4F1;
+}
+
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -50,15 +75,3 @@ textarea {
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
-
-// @media (max-width: 960px) {
-//   body {
-//     overflow: auto;
-//   }
-// }
-
-// @media (max-width:530px) {
-//   body {
-//     overflow-x: hidden
-//   }
-// }

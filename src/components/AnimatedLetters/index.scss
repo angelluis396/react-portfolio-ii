@@ -16,6 +16,8 @@
     &:hover {
       animation: rubberBand 1s;
       color: #CCF381;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #4d4d4e;
     }
   }
   

@@ -8,12 +8,12 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <img
+      {/* <img
         className="solid-logo"
         ref={solidLogoRef}
         src={LogoA}
         alt="Java,  Developer"
-      />
+      /> */}
     </div>
   )
 }

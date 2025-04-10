@@ -1,26 +1,55 @@
-import { Route, Routes } from 'react-router-dom'
-import './App.scss';
+import { useState, useEffect } from 'react';
 import Layout from './components/Layout';
 import Home from './components/Home';
-import About from './components/About';
+import AboutSkills from './components/AboutSkills';
 import Contact from './components/Contact';
-import MyWork from './components/MyWork';
-import Skills from './components/Skills';
+import MyWorkSection from './components/MyWork/MyWorkSection';
+import './App.scss';
 
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={<Home/>} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="projects" element={<MyWork />} />
-        </Route>
-      </Routes>
-    </>
+  const [activeSection, setActiveSection] = useState('home');
 
+  useEffect(() => {
+    const sections = ['home', 'about-skills', 'projects', 'contact'];
+    const observerOptions = {
+      root: null,
+      rootMargin: '-100px 0px 0px 0px',
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <Layout activeSection={activeSection}>
+      <main>
+        <section id="home" className="home">
+          <Home />
+        </section>
+        <section id="about-skills" className="about-skills">
+          <AboutSkills />
+        </section>
+        <section id="projects" className="projects">
+          <MyWorkSection />
+        </section>
+        <section id="contact" className="contact">
+          <Contact />
+        </section>
+      </main>
+    </Layout>
   );
 }
 
