@@ -15,7 +15,7 @@ const TopMenu = ({ activeSection }) => {
     <nav className="top-menu">
       <div className="profile-container">
         <img src={profileImage} alt="Angel Alicea" className="profile-image" />
-        <span className="profile-name">Angel Alicea</span>
+        <span className="profile-name">Angel Alicea III</span>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <FontAwesomeIcon icon={faBars} />
