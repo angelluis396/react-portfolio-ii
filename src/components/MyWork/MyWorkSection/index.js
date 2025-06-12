@@ -6,6 +6,7 @@ import metallicaProjectImg from "../../../assets/images/metallicaProjectImg.jpg"
 import projImg2 from "../../../assets/images/project-img2.png";
 import projImg3 from "../../../assets/images/project-img3.png";
 import quizyAiProjectImg from "../../../assets/images/quizyAiProjectImg.jpg";
+import portScannerImg from "../../../assets/images/Port-Scanner-img.jpg"
 
 const MyWorkSection = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -17,6 +18,14 @@ const MyWorkSection = () => {
   }, []);
 
   const projects = [
+    {
+      name: "Python-Port-Scanner",
+      description: "A simple multi-threaded TCP port scanner written in Python. This tool scans a specified range of ports on a target host to identify open ports.",
+      urls: [
+        { text: "GitHub", link: "https://github.com/angelluis396/python-port-scanner" }
+      ],
+      image: portScannerImg
+    },
     {
       name: "Divide & Dine",
       description: "Divide and Dine is a simple, no-frills app designed to take the stress out of splitting restaurant bills.",

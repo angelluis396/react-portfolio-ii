@@ -23,12 +23,12 @@ const AboutSkills = () => {
     }, 3000);
   }, []);
 
-  const introBlurb = "I’m Angel Alicea, a software engineer driven by a passion for solving tough problems and delivering meaningful solutions. My journey in tech has been driven by curiosity and a desire to make a difference.";
+  const introBlurb = "I’m Angel Alicea, a software engineer driven by a passion for solving tough problems and delivering meaningful solutions. My journey in tech has been driven by curiosity and a desire to make a difference in the world.";
   const shortBlurb = (
         <p>
-          I’ve always been curious about tech, starting with early experiments in coding and later exploring cybersecurity during my master’s. When life took a 
-          turn during COVID, I shifted gears into software engineering, eventually landing as a backend engineer. There, I grew to love the teamwork behind 
-          building and refining systems, which sparked my interest in product management as a way to merge tech with creative problem-solving. <br/>
+          I’ve always been fascinated by tech, from early coding experiments to learning about cybersecurity while pursuing my Master's. When life took a turn during COVID, 
+          I pivoted to software engineering, eventually landing as a backend software engineer in the Finance industry. There, I grew to love the teamwork behind securing and 
+          testing systems, igniting my passion for cybersecurity roles like penetration testing and security analysis. <br/>
           <br/>
           Outside of work, I’m all about family, staying active, and strumming my guitar to a mix of country and metal. I thrive on collaboration and am excited 
           to bring my skills to a team that’s pushing the envelope. Want the full story? Click below!
@@ -48,10 +48,9 @@ const AboutSkills = () => {
             As a backend engineer, I specialized in creating robust APIs, optimizing CI/CD pipelines, leading application deployments, and developing features 
             such as enhanced time frames for the spending summary microservice in the Chase mobile app. These responsibilities not only sharpened my technical 
             skills but also deepened my appreciation for the Software Development Life Cycle (SDLC). Coming from a non-traditional tech background, I was hooked 
-            by how collaborative the Software Development Life Cycle (SDLC) turned out to be. As an engineer, I got a front-row seat to the impact roles like 
-            agility leads and product managers had on the software development life cycle. That exposure opened my eyes to product management, which would be a 
-            good way to utilize both my tech skills and natural ability to collaborate and understand people. I enjoy building solutions that work for both users 
-            and the business, mixing creative problem-solving with a focus on results.
+            by how collaborative the Software Development Life Cycle (SDLC) turned out to be. As an engineer, I got a front-row seat to just how intricate modern 
+            systems are—and how many layers of a single web interaction need to be secured. That experience showed me the critical role security analysts and penetration 
+            testers play in protecting each part of the software development life cycle.
           </p>
           <p>
             I’m driven by discipline and curiosity, constantly honing my problem-solving abilities. I believe technology, particularly AI, is a force for good 
@@ -64,8 +63,8 @@ const AboutSkills = () => {
             passions help me stay grounded and keep my creativity alive.
           </p>
           <p>
-            I’m a collaborative team player at heart, eager to bring my tech and creative problem-solving skills to a forward-thinking company—whether in product 
-            management, DevOps, or cybersecurity. Let’s build something meaningful together!
+            I’m a collaborative team player at heart, eager to bring my tech and creative problem-solving skills to a forward-thinking company. Let’s build something 
+            meaningful together!
           </p>
     </div>
   );
