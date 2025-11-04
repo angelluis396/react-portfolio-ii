@@ -9,8 +9,8 @@ const Home = () => {
 
   const nameArray = ['n', 'g', 'e', 'l', ','];
   const jobArray = [
-    'S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ',
-    'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.'
+    'P', 'r', 'o', 'd', 'u', 'c', 't', ' ',
+    'M', 'a', 'n', 'a', 'g', 'e', 'r', '.'
   ];
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m</span>
             <img 
               src={LogoTitle} 
-              alt="Developer Name, Java Developer Name" 
+              alt="Developer Name" 
             />
             <AnimatedLetters 
               letterClass={letterClass} 
@@ -45,7 +45,7 @@ const Home = () => {
               idx={22} 
             />
           </h1>
-          <h2>Secure Systems Builder / Perpetual Problem Solver / Thrash Metal & Hiking Enthusiast</h2>
+          <h2> Product Focused Software Engineer / Perpetual Problem Solver / Thrash Metal & Fitness Enthusiast</h2>
           <a href="#contact" className="flat-button">
             CONTACT ME
           </a>

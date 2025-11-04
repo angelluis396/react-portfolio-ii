@@ -27,10 +27,10 @@ const AboutSkills = () => {
   const shortBlurb = (
         <p>
           I’ve always been fascinated by tech, from early coding experiments to learning about cybersecurity while pursuing my Master's. When life took a turn during COVID, 
-          I pivoted to software engineering, eventually landing as a backend software engineer in the Finance industry. There, I grew to love the teamwork behind securing and 
-          testing systems, igniting my passion for cybersecurity roles like penetration testing and security analysis. <br/>
+          I pivoted to software engineering, eventually landing as a backend software engineer in the Finance industry. There, I grew to love the teamwork behind creating 
+          features in an agile environment, igniting my passion for product management roles like defining roadmaps and driving cross-functional collaboration. <br/>
           <br/>
-          Outside of work, I’m all about family, staying active, and strumming my guitar to a mix of country and metal. I thrive on collaboration and am excited 
+          Outside of work, I’m all about family, staying active, and shredding my guitar to a either country or metal. I thrive on collaboration and am excited 
           to bring my skills to a team that’s pushing the envelope. Want the full story? Click below!
         </p>
   );
@@ -45,12 +45,12 @@ const AboutSkills = () => {
             job as a backend software engineer.
           </p>
           <p>
-            As a backend engineer, I specialized in creating robust APIs, optimizing CI/CD pipelines, leading application deployments, and developing features 
-            such as enhanced time frames for the spending summary microservice in the Chase mobile app. These responsibilities not only sharpened my technical 
-            skills but also deepened my appreciation for the Software Development Life Cycle (SDLC). Coming from a non-traditional tech background, I was hooked 
-            by how collaborative the Software Development Life Cycle (SDLC) turned out to be. As an engineer, I got a front-row seat to just how intricate modern 
-            systems are—and how many layers of a single web interaction need to be secured. That experience showed me the critical role security analysts and penetration 
-            testers play in protecting each part of the software development life cycle.
+          As a backend engineer, I specialized in creating robust APIs, optimizing CI/CD pipelines, leading application deployments, and developing features such as 
+          enhanced time frames for the spending summary microservice in the Chase mobile app. These responsibilities not only sharpened my technical skills but also 
+          deepened my appreciation for the Software Development Life Cycle (SDLC). Coming from a non-traditional tech background, I was hooked by how collaborative 
+          the SDLC turned out to be. As an engineer, I got a front-row seat to just how intricate modern systems are, and how cross-functional teams align to turn user 
+          needs into impactful features. That experience showed me the critical role product managers play in orchestrating roadmaps, prioritizing backlogs, and driving 
+          end-to-end delivery across engineering, design, and stakeholders.
           </p>
           <p>
             I’m driven by discipline and curiosity, constantly honing my problem-solving abilities. I believe technology, particularly AI, is a force for good 
@@ -58,9 +58,8 @@ const AboutSkills = () => {
             along the way.
           </p>
           <p>
-            Outside of tech, I’m a dedicated family man who works hard and loves staying active—whether I’m lifting weights, exploring the outdoors, or shredding 
-            on my electric guitar. My music taste runs the gamut from country to thrash metal, which mirrors my versatile approach to both life and work. These 
-            passions help me stay grounded and keep my creativity alive.
+            Outside of tech, I’m a dedicated family man who works hard and loves staying active, whether I’m lifting weights, exploring the outdoors, or playing 
+            my electric guitar. These passions help me stay grounded and keep my creativity alive.
           </p>
           <p>
             I’m a collaborative team player at heart, eager to bring my tech and creative problem-solving skills to a forward-thinking company. Let’s build something 
