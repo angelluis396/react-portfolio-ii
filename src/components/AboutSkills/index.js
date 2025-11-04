@@ -26,18 +26,18 @@ const AboutSkills = () => {
   const introBlurb = "I’m Angel Alicea, a Product Manager driven by a passion for solving tough problems and delivering meaningful solutions. My journey in technology has been driven by curiosity and a desire to make a difference in the world while having fun.";
   const shortBlurb = (
         <p>
-          I’ve always been fascinated by tech, from early coding experiments to learning about cybersecurity while pursuing my Master's. When life took a turn during COVID, 
-          I pivoted to software engineering, eventually landing as a backend software engineer in the Finance industry. There, I grew to love the teamwork behind creating 
-          features in an agile environment, igniting my passion for product management roles like defining roadmaps and driving cross-functional collaboration. <br/>
+          I’ve always been fascinated by tech—from early coding experiments to studying cybersecurity during my Master’s. When COVID disrupted my path, I pivoted to 
+          software engineering and landed a backend role in Finance. There, I fell in love with agile teamwork and the process of turning ideas into features. That 
+          experience ignited my passion for product management: defining roadmaps, prioritizing impact, and driving cross-functional collaboration.<br/>
           <br/>
-          Outside of work, I’m all about family, staying active, and shredding my guitar to a either country or metal. I thrive on collaboration and am excited 
+          Outside of work, I’m all about family, staying active, and shredding on my guitar. I thrive on collaboration and am excited 
           to bring my skills to a team that’s pushing the envelope. Want the full story? Click below!
         </p>
   );
   const fullStory = (
     <div className="full-story">
           <p>
-            Tech has always been my playground—whether I was tweaking HTML/CSS on MySpace to create pages that felt like ‘me’ or jailbreaking iPod Touches to 
+            Tech has always been my playground, whether I was tweaking HTML/CSS on MySpace to create pages that felt like ‘me’ or jailbreaking iPod Touches to 
             make them do what I wanted, I learned early on how to use technology to bring my visions to life. That curiosity grew while pursuing my 
             master’s degree in Homeland Security, where I learned about cybersecurity threats. When the pandemic hit and paused my studies, I switched gears and jumped 
             into a full-stack software engineering boot camp to learn more about software development. Upon graduating, I did some free lance web development work before landing a 
