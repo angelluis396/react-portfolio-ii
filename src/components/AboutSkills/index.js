@@ -23,7 +23,7 @@ const AboutSkills = () => {
     }, 3000);
   }, []);
 
-  const introBlurb = "I’m Angel Alicea, a software engineer driven by a passion for solving tough problems and delivering meaningful solutions. My journey in tech has been driven by curiosity and a desire to make a difference in the world.";
+  const introBlurb = "I’m Angel Alicea, a Product Manager driven by a passion for solving tough problems and delivering meaningful solutions. My journey in technology has been driven by curiosity and a desire to make a difference in the world while having fun.";
   const shortBlurb = (
         <p>
           I’ve always been fascinated by tech, from early coding experiments to learning about cybersecurity while pursuing my Master's. When life took a turn during COVID, 
@@ -39,18 +39,18 @@ const AboutSkills = () => {
           <p>
             Tech has always been my playground—whether I was tweaking HTML/CSS on MySpace to create pages that felt like ‘me’ or jailbreaking iPod Touches to 
             make them do what I wanted, I learned early on how to use technology to bring my visions to life. That curiosity grew while pursuing my 
-            master’s degree in Homeland Security, where I learned about cybersecurity threats. When COVID hit and paused my studies, I switched gears and jumped 
-            into a full-stack software engineering boot camp to learn more about coding. Upon graduating, I landed some contract web dev gigs, which showed me 
-            what a software engineer’s day-to-day is really like—way different from those polished YouTube videos. That experience paved the way for a full-time 
+            master’s degree in Homeland Security, where I learned about cybersecurity threats. When the pandemic hit and paused my studies, I switched gears and jumped 
+            into a full-stack software engineering boot camp to learn more about software development. Upon graduating, I did some free lance web development work before landing a 
             job as a backend software engineer.
           </p>
           <p>
-          As a backend engineer, I specialized in creating robust APIs, optimizing CI/CD pipelines, leading application deployments, and developing features such as 
-          enhanced time frames for the spending summary microservice in the Chase mobile app. These responsibilities not only sharpened my technical skills but also 
-          deepened my appreciation for the Software Development Life Cycle (SDLC). Coming from a non-traditional tech background, I was hooked by how collaborative 
-          the SDLC turned out to be. As an engineer, I got a front-row seat to just how intricate modern systems are, and how cross-functional teams align to turn user 
-          needs into impactful features. That experience showed me the critical role product managers play in orchestrating roadmaps, prioritizing backlogs, and driving 
-          end-to-end delivery across engineering, design, and stakeholders.
+          As a backend engineer at Chase, I built robust APIs, optimized CI/CD pipelines, led deployments, and developed features—like enhanced time frames for the 
+          spending-summary microservice in the mobile app. These experiences honed my technical skills while deepening my respect for the full Software Development 
+          Life Cycle (SDLC). Coming from a non-traditional background, I was surprised by how collaborative the SDLC proved to be. I saw firsthand the complexity 
+          of modern systems and how cross-functional teams translate user needs into impactful features. Through hands-on work across every phase, I discovered where I 
+          thrived most: planning, prioritization, and orchestration. Learning about product managers revealed a perfect fit—I could blend my strong soft skills and natural 
+          organizational instincts with my technical expertise. I genuinely loved shaping direction and aligning teams. That’s when my passion for product management took 
+          root, pointing me toward driving roadmaps, prioritizing backlogs, and leading end-to-end delivery with engineering, design, and stakeholders.
           </p>
           <p>
             I’m driven by discipline and curiosity, constantly honing my problem-solving abilities. I believe technology, particularly AI, is a force for good 
