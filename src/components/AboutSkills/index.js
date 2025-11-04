@@ -6,7 +6,7 @@ import {
   faJava,
   faJsSquare,
   faAws,
-  faPython,
+  faJira,
   faFigma,
   faAtlassian,
 } from '@fortawesome/free-brands-svg-icons';
@@ -104,7 +104,7 @@ const AboutSkills = () => {
                   <FontAwesomeIcon icon={faJava} color="#DD0031" />
                 </div>
                 <div className="face2">
-                  <FontAwesomeIcon icon={faPython} color="#5ED4F4" />
+                  <FontAwesomeIcon icon={faJira} color="#5ED4F4" />
                 </div>
                 <div className="face3">
                   <FontAwesomeIcon icon={faAws} color="#F06529" />
