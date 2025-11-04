@@ -16,7 +16,7 @@ const Layout = ({ children, activeSection }) => {
         <div className="footer-content">
           <div className="footer-top">
             <div className="footer-blurb">
-              <h3>Angel Alicea, Software Engineer</h3>
+              <h3>Angel Alicea, Product Manager</h3>
               <p>Passionate Problem Solver</p>
             </div>
             <div className="social-links">

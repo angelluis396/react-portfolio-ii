@@ -19,14 +19,6 @@ const MyWorkSection = () => {
 
   const projects = [
     {
-      name: "Python-Port-Scanner",
-      description: "A simple multi-threaded TCP port scanner written in Python. This tool scans a specified range of ports on a target host to identify open ports.",
-      urls: [
-        { text: "GitHub", link: "https://github.com/angelluis396/python-port-scanner" }
-      ],
-      image: portScannerImg
-    },
-    {
       name: "Divide & Dine",
       description: "Divide and Dine is a simple, no-frills app designed to take the stress out of splitting restaurant bills.",
       urls: [
@@ -66,6 +58,14 @@ const MyWorkSection = () => {
       ],
       image: metallicaProjectImg
     },
+    {
+      name: "Python-Port-Scanner",
+      description: "A simple multi-threaded TCP port scanner written in Python. This tool scans a specified range of ports on a target host to identify open ports.",
+      urls: [
+        { text: "GitHub", link: "https://github.com/angelluis396/python-port-scanner" }
+      ],
+      image: portScannerImg
+    }
     // {
     //   name: "Future Project",
     //   description: "Project Coming Soon",
