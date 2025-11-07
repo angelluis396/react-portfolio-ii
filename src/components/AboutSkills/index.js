@@ -26,44 +26,60 @@ const AboutSkills = () => {
   const introBlurb = "I’m Angel Alicea, a Product Manager driven by a passion for solving tough problems and delivering meaningful solutions. My journey in technology has been driven by curiosity and a desire to make a difference in the world while having fun.";
   const shortBlurb = (
         <p>
-          I’ve always been fascinated by tech—from early coding experiments to studying cybersecurity during my Master’s. When COVID disrupted my path, I pivoted to 
-          software engineering and landed a backend role in Finance. There, I fell in love with agile teamwork and the process of turning ideas into features. That 
-          experience ignited my passion for product management: defining roadmaps, prioritizing impact, and driving cross-functional collaboration.<br/>
+          I got my start in tech during college, designing Canvas courses for professors with HTML and CSS. A CIS elective where I built a simple JavaScript 
+          app sealed the deal, I was hooked!<br/>
           <br/>
-          Outside of work, I’m all about family, staying active, and shredding on my guitar. I thrive on collaboration and am excited 
+
+          After graduating, I joined a full-stack bootcamp, learned to build web apps end-to-end, and even did some freelance work during the pandemic. 
+          That experience led me to a J.P. Morgan hackathon, which turned into a full-time engineering role.<br/>
+          <br/>
+
+          Over the next few years, I grew from Software Engineer I to II, shipping production code and collaborating closely with product managers. Along the 
+          way I realized my true passion, a love for connecting the dots between technical work and product vision.<br/>
+          <br/>
+
+          Outside of work, I’m all about family, staying active competing in body building competitions, and shredding on my guitar. I thrive on collaboration and am excited 
           to bring my skills to a team that’s pushing the envelope. Want the full story? Click below!
         </p>
   );
   const fullStory = (
     <div className="full-story">
           <p>
-            Tech has always been my playground, whether I was tweaking HTML/CSS on MySpace to create pages that felt like ‘me’ or jailbreaking iPod Touches to 
-            make them do what I wanted, I learned early on how to use technology to bring my visions to life. That curiosity grew while pursuing my 
-            master’s degree in Homeland Security, where I learned about cybersecurity threats. When the pandemic hit and paused my studies, I switched gears and jumped 
-            into a full-stack software engineering boot camp to learn more about software development. Upon graduating, I did some free lance web development work before landing a 
-            job as a backend software engineer.
+            My journey into tech started back in college, when I was working part-time doing web development. I helped professors design Canvas courses using a bit of 
+            HTML and CSS, nothing fancy, but it got me curious. Around that same time, I took a CIS elective where I built a simple app with JavaScript, and that’s 
+            when it really clicked for me. I loved the idea of bringing ideas to life through code.
           </p>
           <p>
-          As a backend engineer at Chase, I built robust APIs, optimized CI/CD pipelines, led deployments, and developed features—like enhanced time frames for the 
-          spending-summary microservice in the mobile app. These experiences honed my technical skills while deepening my respect for the full Software Development 
-          Life Cycle (SDLC). Coming from a non-traditional background, I was surprised by how collaborative the SDLC proved to be. I saw firsthand the complexity 
-          of modern systems and how cross-functional teams translate user needs into impactful features. Through hands-on work across every phase, I discovered where I 
-          thrived most: planning, prioritization, and orchestration. Learning about product managers revealed a perfect fit—I could blend my strong soft skills and natural 
-          organizational instincts with my technical expertise. I genuinely loved shaping direction and aligning teams. That’s when my passion for product management took 
-          root, pointing me toward driving roadmaps, prioritizing backlogs, and leading end-to-end delivery with engineering, design, and stakeholders.
+            Looking back, I realize my curiosity for tech started long before college. As a kid, I loved customizing my Myspace page with HTML and CSS to show more of 
+            my personality, and I used to hack my iPod touches just to unlock new themes and apps that weren’t available on iOS. I didn’t realize it then, but those small 
+            moments of curiosity were the start of something bigger.
           </p>
           <p>
-            I’m driven by discipline and curiosity, constantly honing my problem-solving abilities. I believe technology, particularly AI, is a force for good 
-            with the potential to transform the world like the printing press or the internet did. I’m excited to watch that future unfold and to help shape it 
-            along the way.
+            After finishing my undergraduate degree, I enrolled in a full-stack coding bootcamp, where I learned to develop web applications from front to back using 
+            agile methodologies. I gained hands-on experience with backend, frontend, and database technologies, and learned how to design mockups and MVPs.
           </p>
+
+          <p>
+            Graduating during the pandemic wasn’t easy, so I did some freelance work for small businesses to keep learning and stay sharp. When things started to pick 
+            back up, I joined a J.P. Morgan hackathon with a team of five developers. It was an incredible experience and my performance there led to a full-time offer.
+          </p>
+
+          <p>
+            I spent two years in J.P. Morgan’s Emerging Software Engineer Program, where I worked closely with senior engineers to learn the software development lifecycle 
+            and ship production code. After graduating from the program, I was promoted from a SEP to a Software Engineer I, and later, a Software Engineer II. While I 
+            enjoyed the technical challenges of engineering, I began to realize that my strengths extended beyond code.
+          </p>
+
+          <p>
+            Working alongside Product Managers and Scrum Masters, I discovered a passion for product management. Leading agile ceremonies like sprint reviews, backlog 
+            refinements, and daily standups gave me opportunities to collaborate with cross-functional teams, translate technical details for stakeholders, and 
+            contribute to shaping product direction. That experience helped me recognize that product management would allow me to combine my technical background with 
+            my communication, leadership, and problem-solving skills.
+          </p>
+
           <p>
             Outside of tech, I’m a dedicated family man who works hard and loves staying active, whether I’m lifting weights, exploring the outdoors, or playing 
-            my electric guitar. These passions help me stay grounded and keep my creativity alive.
-          </p>
-          <p>
-            I’m a collaborative team player at heart, eager to bring my tech and creative problem-solving skills to a forward-thinking company. Let’s build something 
-            meaningful together!
+            my electric guitar. These passions challenge me and help me stay grounded while keeping my creativity alive.
           </p>
     </div>
   );
